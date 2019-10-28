@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139952796-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-139952796-1');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Visualization Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="landing.html">Latitude</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <!-- Left box  -->
+        <div class="box">
+          <h3 class="title">Latitude vs. Wind Speed</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="landing.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Wind Speed</li>
+            </ol>
+          </nav>
+          <hr>
+          <img src="img_4.png" alt="Wind Speed Graph">
+          <p>There does not appear to be any relationship between wind speed at a location and its latitude. 
+              We can see varying wind speeds ranging across all latitudes and locations.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title">Visualizations</h5>
+          <hr>
+
+
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-lg-6 col-md-3">
+                <a href="max_temp.html">
+                  <img class="panel" src="img_1.png" alt="Max Temperature Image" title="Latitude vs. Max Temp">
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-3">
+                <a href="humidity.html">
+                  <img class="panel" src="img_2.png" alt="Humidity Graph" title="Latitude vs. Humidity">
+                </a>
+              </div>
+            
+              <div class="col-lg-6 col-md-3">
+                <a href="cloudiness.html">
+                  <img class="panel" src="img_3.png" alt="Cloudiness Graph" title="Latitude vs. Cloudiness">
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-3">
+                <a href="wind_speed.html">
+                  <img class="panel" src="img_4.png" alt="Wind Speed Graph" title="Latitude vs. Wind Speed">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
